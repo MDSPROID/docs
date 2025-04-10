@@ -46,6 +46,7 @@
           {
             "group": "Endpoint Examples",
             "pages": [
+              "api-reference/endpoint/put",
               "api-reference/endpoint/get",
               "api-reference/endpoint/create",
               "api-reference/endpoint/delete",
