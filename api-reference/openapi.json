@@ -13,6 +13,11 @@
       "url": "https://registrasi.qris.online"
     }
   ],
+  "security": [
+    {
+      "bearerAuth": []
+    }
+  ],
   "paths": {
     "/v2/restapi/backend/get-otp-verification-account.php": {
       "get": {
@@ -20,7 +25,7 @@
         "parameters": [
           {
             "name": "type",
-            "in": "body",
+            "in": "query",
             "description": "Jenis verifikasi whatsapp / email",
             "required": true,
             "schema": {
@@ -30,7 +35,7 @@
           },
           {
             "name": "param",
-            "in": "body",
+            "in": "query",
             "description": "email / whatsapp merchant",
             "required": true,
             "schema": {
@@ -40,7 +45,7 @@
           },
           {
             "name": "action",
-            "in": "body",
+            "in": "query",
             "description": "isi dengan sent",
             "required": true,
             "schema": {
@@ -50,7 +55,7 @@
           },
           {
             "name": "registrationNumber",
-            "in": "body",
+            "in": "query",
             "description": "nomor registrasi",
             "required": true,
             "schema": {
